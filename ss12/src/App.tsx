@@ -5,7 +5,8 @@ import UserInfo from "./components/PTIT_CNTT3_IT104_Session12_Bai03/UserInfo";
 import ColorBox from "./components/PTIT_CNTT3_IT104_Session12_Bai04/ColorBox";
 import Format from "./components/PTIT_CNTT3_IT104_Session12_Bai05/Format";
 import { AdminIndex } from "./components/PTIT_CNTT3_IT104_Session12_Bai06/Page/AdminIndex";
-import { UserLayout } from "./components/PTIT_CNTT3_IT104_Session12_Bai07/Page/ToDoList";
+import { UserLayout } from "./components/PTIT_CNTT3_IT104_Session12_Bai07/Page/UserLayout";
+import { Info } from "./components/PTIT_CNTT3_IT104_Session12_Bai08/Page/Info";
 
 const TableHead = () => (
   <thead>
