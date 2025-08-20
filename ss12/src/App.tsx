@@ -28,7 +28,6 @@ const Button = () => (
   </td>
 );
 
-const TodoListIndex = () => <div>Đây là Todo List</div>;
 function App() {
   const data = [
     { stt: 1, name: "Nguyễn Văn A", dob: "20/11/2023", gender: "Nam", address: "Hà Nội" },
@@ -50,7 +49,7 @@ function App() {
 
       <table className="infoTable">
         <TableHead />
-        <tbody> 
+        <tbody>
           {data.map((d, index) => {
             return (
               <tr key={index}>
@@ -65,8 +64,6 @@ function App() {
           })}
         </tbody>
       </table>
-
-      <TodoListIndex />
     </>
   );
 }
