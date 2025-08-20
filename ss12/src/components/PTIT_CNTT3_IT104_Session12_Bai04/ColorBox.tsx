@@ -1,10 +1,36 @@
-export default function ColorBox() {
-    const boxArea = <div style={{display: "flex"}}>
-        <div style={{width: "200px", height: "200px", backgroundColor: "red", display: "flex", justifyContent: "center", alignItems: "center", margin: "20px"}}>Box</div>
-        <div style={{width: "200px", height: "200px", backgroundColor: "blue", display: "flex", justifyContent: "center", alignItems: "center", margin: "20px"}}>Box</div>
-        <div style={{width: "200px", height: "200px", backgroundColor: "green", display: "flex", justifyContent: "center", alignItems: "center", margin: "20px"}}>Box</div>
+type ColorBoxProps = {
+  color: string; 
+};
+
+const ColorBox = ({ color }: ColorBoxProps) => {
+  return (
+    <div style={{ textAlign: "center", margin: "20px", display: "inline-block" }}>
+      <div
+        style={{
+          width: "200px",
+          height: "200px",
+          backgroundColor: color,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+          fontWeight: "bold"
+        }}
+      >
+        Box
+      </div>
+      <div
+        style={{
+          marginTop: "10px",
+          border: "1px solid gray",
+          padding: "5px 10px",
+          display: "inline-block"
+        }}
+      >
+        {color}
+      </div>
     </div>
-    return (
-        <div>{boxArea}</div>
-    )
-}
+  );
+};
+
+export default ColorBox;
